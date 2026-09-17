@@ -1,6 +1,7 @@
 // app.js - lógica de la lista de tareas
 const listaTareas = document.getElementById("lista-tareas");
 function renderizarTareas(tareas) {
+  if (!tareas) { tareas = []; }
   listaTareas.innerHTML = "";
   tareas.forEach(function (tarea, indice) {
     const li = document.createElement("li");
