@@ -19,7 +19,9 @@ function renderizarTareas(tareas) {
     listaTareas.appendChild(li);
   });
 }
-
+li.addEventListener("click", function () {
+  li.classList.toggle("text-decoration-line-through");
+});
 renderizarTareas(["Ejemplo de tarea inicial"]);
 let tareas = ["Ejemplo de tarea inicial"];
 
